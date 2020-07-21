@@ -12,7 +12,7 @@ extern crate alloc;
 extern crate rlibc;
 use core::panic::PanicInfo;
 use alloc::vec;
-use alloc::string::String;
+// use alloc::string::String;
 use bootloader::{BootInfo, entry_point};
 
 // this function halts the process. ref: https://github.com/rust-osdev/x86_64/blob/5e8e218381c5205f5777cb50da3ecac5d7e3b1ab/src/instructions/mod.rs#L16-L22
@@ -42,9 +42,8 @@ pub fn init() {
 entry_point!(kernel_main);
 
 fn kernel_main(boot_info: &'static BootInfo) -> ! {
-  let data = vec!["a"];
   init();
-
-  println!("Started the Carnel Kernel. (c) 2020 https://codic12.github.io");
+//   let n = vec!["a"];
+  println!("Started the Radence Kernel. (c) 2020 https://codic12.github.io");
   hlt_loop(); 
 }

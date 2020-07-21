@@ -1,6 +1,6 @@
 [package]
-name = "carnel"
-version = "0.1.0"
+name = "radence"
+version = "0.0.1"
 authors = ["codic <codic@linuxmail.org>"]
 edition = "2018"
 
