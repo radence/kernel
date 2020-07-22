@@ -58,10 +58,11 @@ fn kernel_main(boot_info: &'static BootInfo) -> ! {
     allocator::init_heap(&mut mapper, &mut frame_allocator)
         .expect("heap initialization failed");
     init();
-    // let n = vec!["a"];
+    let n = vec!["a"];
     println!("Started the Radence Kernel. (c) 2020 https://codic12.github.io");
     // loop {
         print!("> ");
+        // unsafe { println!("{}", interrupts::input); }
     // }
 
     hlt_loop(); 
